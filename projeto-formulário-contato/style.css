@@ -1,0 +1,99 @@
+:root {
+    --transition-bottom: border .7s;
+    --border-form: 2px solid rgb(255, 255, 255);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(19, 19, 19);
+}
+
+form {
+    width: 90%;
+    max-width: 70em;
+    background-color: black;
+    border-radius: .5em;
+    border-left: var(--border-form);
+    border-bottom: var(--border-form);
+    padding: 2em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    border: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    padding: 1em;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.cadastro {
+    padding: 1em 0 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 3px solid rgb(87, 87, 87);
+    background-color: black;
+    transition: var(--transition-bottom)
+}
+
+input[type] {
+    font-size: 1em;
+    color: white;
+}
+
+input:valid,
+textarea:valid {
+    border-bottom: 3px solid green;
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+    border-bottom: 3px solid red;
+}
+
+#assunto {
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 3px solid rgb(87, 87, 87);
+    background-color: black;
+    transition: var(--transition-bottom);
+}
+
+textarea {
+    border: none;
+    border-bottom: 3px solid rgb(87, 87, 87);
+    margin-bottom: 2em;
+    resize: none;
+    background-color: black;
+    color: white;
+    padding: 1em 0 0;
+    transition: var(--transition-bottom)
+}
+
+.btn {
+    font-size: 1em;
+    width: fit-content;
+    margin-left: auto;
+    padding: 1em;
+    border: none;
+    border-radius: .5em;
+    color: white;
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+}
